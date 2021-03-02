@@ -1,9 +1,10 @@
 def kthLargestElement(nums, k):
-    
+    """ Given a list and a number, k, find the k-th largest element from the list without using indexing into the list (i.e. Use Stacks & Queues)."""
+
     newList = [nums[0]]
     tempList = []
-        
-    for idx in range(1,len(nums)):
+
+    for idx in range(1, len(nums)):
         firstNum = newList[0]
         lastNum = newList[-1]
         if nums[idx] >= lastNum:
@@ -17,8 +18,9 @@ def kthLargestElement(nums, k):
             tempList.reverse()
             newList.extend(tempList)
             tempList = []
-            
+
     return newList[len(nums)-k]
+
 
 print(kthLargestElement([3, 2, 1, 5, 6, 4], 2))
 ls = [3, 2, 1, 5, 6, 4]
