@@ -1,5 +1,6 @@
 # LeetCode Problem #1323
 def maximum69Number (num: int) -> int:
+    """Given an integer contains only 6's & 9's, you may check up to one digit to maximize the number."""
         
     numCopy = num
     numOfDigit = 0
@@ -27,5 +28,21 @@ def maximum69Number (num: int) -> int:
 
     return result + num
 
+
+def maximum69Number2 (num: int) -> int:
+
+    numStr = str(num)
+    
+    result = ''
+
+    for index, digitStr in enumerate(numStr):
+        if digitStr == "6":
+            digitStr = "9"
+            result += digitStr + numStr[index+1:]
+            break
+        result += digitStr
+
+    return int(result)
+
 num=6969
-print(maximum69Number(num))
+print(maximum69Number2(num))
