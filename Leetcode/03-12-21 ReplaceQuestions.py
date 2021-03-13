@@ -1,3 +1,4 @@
+# * Leetcode #1576
 # a and b == (!a) or (!b)
 
 def modifyString(s: str) -> str:
