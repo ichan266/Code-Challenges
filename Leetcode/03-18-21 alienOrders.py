@@ -1,12 +1,12 @@
 # LeetCode #953
-def isAlienSorted(words: List[str], order: str) -> bool:
+def isAlienSorted(words: list[str], order: str) -> bool:
 
-    aliensOrder = list(order)
+    ORDER = list(order)
 
     def checkOrder(word1, word2):
         for index in range(min(len(word1), len(word2))):
-            i1 = aliensOrder.index(word1[index])
-            i2 = aliensOrder.index(word2[index])
+            i1 = ORDER.index(word1[index])
+            i2 = ORDER.index(word2[index])
             if i1 > i2:
                 return False
             elif i1 < i2:
@@ -22,3 +22,8 @@ def isAlienSorted(words: List[str], order: str) -> bool:
             return False
 
     return True
+
+
+print(isAlienSorted(["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz"))
+print(isAlienSorted(["word", "world", "row"], "worldabcefghijkmnpqstuvxyz"))
+print(isAlienSorted(["apple", "app"], "abcdefghijklmnopqrstuvwxyz"))
