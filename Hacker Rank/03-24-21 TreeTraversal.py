@@ -1,3 +1,4 @@
+# Hacker Rank: Binary Tree Traversal: Pre-Order, In-Order, Post-Order
 # HackerRank Code
 class Node:
     def __init__(self, info):
@@ -36,12 +37,33 @@ class BinarySearchTree:
                 else:
                     break
 
-# * This is the code I wrote
 
-
+# $ These are the functions I wrote
 def preOrder(root):
     print(root.info, end=' ')
+
     if root.left:
         preOrder(root.left)
+
     if root.right:
         preOrder(root.right)
+
+
+def inOrder(root):
+    if root.left:
+        inOrder(root.left)
+
+    print(root.info, end=' ')
+
+    if root.right:
+        inOrder(root.right)
+
+
+def postOrder(root):
+    if root.left:
+        postOrder(root.left)
+
+    if root.right:
+        postOrder(root.right)
+
+    print(root.info, end=' ')
