@@ -27,8 +27,8 @@ def moveZeros1(nums):
             nums.remove(item)
             nums.append(item)
             n += 1
-            if len(nums) - n == 0:
-                break
+            # if len(nums) - n == 0:
+            #     break
 
     return nums
 
