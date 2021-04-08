@@ -17,3 +17,8 @@ def reverseInParentheses(inputString):
         inputString = findCharInBracket(inputString)
 
     return inputString
+
+
+# % This one is from another user. Need to think about it...
+def reverseInParentheses1(s):
+    return eval('"' + s.replace('(', '"+("').replace(')', '")[::-1]+"') + '"')
