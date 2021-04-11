@@ -21,7 +21,6 @@ def findMaxConsecutiveOnes(nums: list[int]) -> int:
 
 def findMaxConsecutiveOnes1(nums: list[int]) -> int:
 
-    # countSet = set()
     count, maxCount = 0, 0
 
     for num in nums:
