@@ -20,3 +20,19 @@ class Solution:
         return head
 
 instance = Solution()
+
+class Solution:
+    def deleteDuplicates(self, head: ListNode) -> ListNode:
+        
+        curr = head
+        
+        if curr == None or curr.next == None:
+            return curr
+        
+        while curr!= None and curr.next!= None:
+            if curr.val == curr.next.val:
+                curr.next = curr.next.next
+            else:
+                curr = curr.next
+        
+        return head

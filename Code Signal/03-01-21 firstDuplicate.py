@@ -11,8 +11,6 @@ def firstDuplicate(a):
     return -1
 
 print(firstDuplicate([8, 4, 6, 2, 6, 4, 7, 9, 5, 8]))
-ls = [1, 2, 3, 3]
-
 
 ## Given a list of elements, find its negative index in the List. ##
 def negIndex(ls, K):
