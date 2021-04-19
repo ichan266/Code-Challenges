@@ -21,6 +21,4 @@ class Solution:
         for index, letter in zip(indices, s):
             newList[index] = letter
             
-        newString = ''.join(newList)
-        
-        return newString
+        return ''.join(newList)
