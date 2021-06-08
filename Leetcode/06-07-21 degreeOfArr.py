@@ -6,7 +6,7 @@
 
 # Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.
 
-def findShortestSubArray(num):
+def findShortestSubArray(nums):
 
     from collections import defaultdict
 
