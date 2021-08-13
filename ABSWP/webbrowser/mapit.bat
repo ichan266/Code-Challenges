@@ -1,0 +1,1 @@
+@ py.exe C:\Users\ichan\OneDrive\Code" "Challenges\ABSWP\webbrowser\mapit.py %*
