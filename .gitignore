@@ -3,3 +3,4 @@ rest.http
 *.json
 *.xlsx
 Others
+__pycache__
