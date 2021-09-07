@@ -4,3 +4,4 @@ rest.http
 *.xlsx
 Others
 __pycache__
+testing*.*
